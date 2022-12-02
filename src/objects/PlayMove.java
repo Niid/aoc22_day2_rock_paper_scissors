@@ -26,18 +26,21 @@ public enum PlayMove {
 		return playerMoveCode;
 	}
 
+	// rend un PlayMove en fonction du code d'un coup adverse
 	public static Optional<PlayMove> getMoveByOpponentPlayCode(String value) {
         return Arrays.stream(PlayMove.values())
             .filter(playMove -> playMove.opponentMoveCode == value.charAt(0))
             .findFirst();
     }
-	
+
+	// rend un PlayMove en fonction du code d'un coup joueur
 	public static Optional<PlayMove> getMoveByPlayerPlayCode(String value) {
         return Arrays.stream(PlayMove.values())
             .filter(playMove -> playMove.playerMoveCode == value.charAt(0))
             .findFirst();
     }
 
+	//donne le score d'un coup joueur
 	public int getMoveScore() {
 		return moveScore;
 	}

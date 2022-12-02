@@ -18,7 +18,7 @@ public class main {
 		// Ici il faudra rentrer le chemin vers un fichier .txt contenant l'input donné par le site advent of code !
 		File input = new File(args[0]);
 		
-		// Ici je fais mon parse pour donner une liste d'elfes
+		// Ici je fais mon parse pour donner une liste de rounds
 		ArrayList<Round> rounds = parseFile(input);
 		
 		// un objet pour stocker le score, pas très utile car remplaçable par un simple int mais admettons

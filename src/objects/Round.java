@@ -11,6 +11,7 @@ public class Round {
 		this.playerMove = playerMove;
 	}
 
+	// donne le coup joué par l'adversaire pour ce round
 	public PlayMove getOpponentMove() {
 		return opponentMove;
 	}
@@ -19,6 +20,7 @@ public class Round {
 		this.opponentMove = opponentMove;
 	}
 
+	// donne le coup joué par le joueur pour ce round
 	public PlayMove getPlayerMove() {
 		return playerMove;
 	}
